@@ -19,5 +19,5 @@ func dozen_Divider(){
 
 func main() {
   //call the function to get
-  dozen_Dvider()
+  dozen_Divider()
 }
