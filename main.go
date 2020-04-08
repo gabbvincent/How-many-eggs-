@@ -6,18 +6,19 @@ package main
 
 import "fmt"
 
-func dozen_Divider(){
-  //declare variable as "dozens" type integer
-  var dozens int
-  //ask user to enter in a number
-  fmt.Println("Enter a number you'd like to know how many dozens are inside of: ")
-  fmt.Scanln(&dozens)
-  fmt.Println()
-  //divide the number by 12 and output the quotiant to show how many dozens are in the users number
-  fmt.Println("There are",dozens/12,"dozens inside of",dozens)
+func dozen(dozens int){
+  //multiply the input by 12 to get the number of eggs in the number of dozens entered
+  fmt.Println("There are",dozens*12,"eggs in",dozens,"dozens of eggs.")
 }
 
 func main() {
-  //call the function to get
-  dozen_Divider()
+  //declare var i as integer
+  var i int
+
+  //ask user to enter in a number,scan for i, call dozen(i)
+  fmt.Println("Enter in an amount of donzens to figure out how many eggs are in that many dozens.")
+
+  fmt.Scanln(&i)
+
+  dozen(i)
 }
